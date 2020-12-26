@@ -69,26 +69,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 //    @SuppressLint("ResourceAsColor")
-    public void addDotsIndicator(int position){
-
-        System.out.println("Dot added");
-        dots = new TextView[3];
-
-        for (int i=0;i<dots.length;i++){
-            dots[i] = new TextView(this);
-            dots[i].setText(Html.fromHtml("&#8226;"));
-            dots[i].setTextSize(35);
-            dots[i].setTextColor(getResources().getColor(R.color.colorPrimary, getTheme().getResources().newTheme()));
-
-            navLayout.addView(dots[i]);
-            System.out.println("real dot");
-        }
-
-        if(dots.length>0){
-                dots[position].setTextColor(getResources().getColor(R.color.colorPrimaryDark, getTheme().getResources().newTheme()));
-        }
-
-    }
+//    public void addDotsIndicator(int position){
+//
+//        System.out.println("Dot added");
+//        dots = new TextView[3];
+//
+//        for (int i=0;i<dots.length;i++){
+//            dots[i] = new TextView(this);
+//            dots[i].setText(Html.fromHtml("&#8226;"));
+//            dots[i].setTextSize(35);
+//            dots[i].setTextColor(getResources().getColor(R.color.colorPrimary, getTheme().getResources().newTheme()));
+//
+//            navLayout.addView(dots[i]);
+//            System.out.println("real dot");
+//        }
+//
+//        if(dots.length>0){
+//                dots[position].setTextColor(getResources().getColor(R.color.colorPrimaryDark, getTheme().getResources().newTheme()));
+//        }
+//
+//    }
 
 
     ViewPager.OnPageChangeListener viewlis = new ViewPager.OnPageChangeListener() {
